@@ -16,7 +16,8 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .servers(Arrays.asList(
-                        new Server().url("http://localhost:8080").description("Local server")
+                        new Server().url("https://accurate-adventure-production.up.railway.app").description("Production server"), // URL de producción
+                        new Server().url("http://localhost:8080").description("Local server") // URL local
                 ))
                 .info(new Info()
                         .title("VetConnect API")
